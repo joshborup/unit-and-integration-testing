@@ -35,9 +35,8 @@ describe('Car tests', () => {
     })
 
     test('test post', () => {
-        expect.assertions(3);
+        expect.assertions(2);
         return promises.postCars(url, newCar).then( response => {
-            expect(response[25].id).toEqual(26);
             expect(response[25]).not.toBeUndefined();
             expect(response[25]).toEqual({
                 id: 26,

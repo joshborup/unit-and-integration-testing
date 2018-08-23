@@ -8,7 +8,7 @@ export default {
     },
     postCars(url, newCarObj){
         return axios.post(url, newCarObj).then((response)=> {
-            return response.data
+            return  response.data
         })
     }
 }
