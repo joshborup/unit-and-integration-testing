@@ -12,7 +12,7 @@ class App extends Component {
       year:'',
       color:''
     }
-  }
+  } 
 
   componentDidMount(){
     promises.getCars('/api/cars').then(response => {
